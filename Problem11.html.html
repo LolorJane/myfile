@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const email = prompt("Enter Email");
+
+        function isValidEmail(email) {
+            const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//to validate email addresses
+            if (emailregex.test(email)) { // Check if the string matches the pattern a method that executes a search for a match between a regular expression and a specified string
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(isValidEmail(email)); // true
+        alert(isValidEmail(email));
+
+
+    </script>
+</body>
+
+</html>
